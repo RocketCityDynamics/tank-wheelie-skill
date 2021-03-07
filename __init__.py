@@ -33,7 +33,7 @@ class Wheelie(MycroftSkill):
     def handle_wheelie(self, message):
         self.speak_dialog('wheelie')
 
-         GPIO.setwarnings(False)
+        GPIO.setwarnings(False)
         GPIO.setmode(GPIO.BCM)
         GPIO.setup(in1,GPIO.OUT)
         GPIO.setup(in2,GPIO.OUT)
